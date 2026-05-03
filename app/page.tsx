@@ -41,10 +41,10 @@ export default function Home() {
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
-                href="#"
+                href="/products"
                 className="rounded-xl bg-black px-6 py-3 text-center text-sm font-semibold text-white hover:opacity-80"
               >
-                View Projects
+                View Products
               </a>
 
               <a
