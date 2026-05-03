@@ -4,7 +4,7 @@ export default function Home() {
       <h1 className="text-5xl font-bold">Home</h1>
 
       <p className="text-lg text-gray-500 max-w-xl">
-        Welcome to my website. More stuff coming very soon.
+        Welcome to Shaun's website. More stuff coming very soon.
       </p>
 
       <div className="flex gap-4">
