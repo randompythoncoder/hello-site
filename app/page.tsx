@@ -5,14 +5,13 @@ export default function Home() {
       <header className="border-b border-gray-200">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
           <div className="text-xl font-bold tracking-tight">ShaunSite</div>
-
-          <nav className="hidden gap-8 text-sm font-medium text-gray-600 md:flex">
-            <a href="#" className="hover:text-black">Home</a>
-            <a href="#" className="hover:text-black">About</a>
-            <a href="#" className="hover:text-black">Projects</a>
-            <a href="#" className="hover:text-black">Contact</a>
-          </nav>
-
+	  	
+	  <nav className="hidden gap-8 text-sm font-medium text-gray-600 md:flex">
+	     <a href="/" className="hover:text-black">Home</a>
+	     <a href="/about" className="hover:text-black">About</a>
+	     <a href="/products" className="hover:text-black">Products</a>
+	     <a href="/contact" className="hover:text-black">Contact</a>
+	  </nav>
           <a
             href="#"
             className="rounded-xl bg-black px-5 py-2 text-sm font-semibold text-white hover:opacity-80"
