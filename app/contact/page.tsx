@@ -4,7 +4,7 @@ export default function Contact() {
       <h1 className="text-5xl font-bold">Contact</h1>
 
       <p className="mt-6 text-gray-600">
-        Email: example@email.com
+        Email: example@gmail.com
       </p>
 
       <p className="mt-2 text-gray-600">

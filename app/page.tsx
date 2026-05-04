@@ -5,7 +5,7 @@ export default function Home() {
       <header className="border-b border-gray-200">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
           <div className="text-xl font-bold tracking-tight">ShaunSite</div>
-	  	
+	
 	  <nav className="hidden gap-8 text-sm font-medium text-gray-600 md:flex">
 	     <a href="/" className="hover:text-black">Home</a>
 	     <a href="/about" className="hover:text-black">About</a>
@@ -13,7 +13,7 @@ export default function Home() {
 	     <a href="/contact" className="hover:text-black">Contact</a>
 	  </nav>
           <a
-            href="#"
+            href="/get-started"
             className="rounded-xl bg-black px-5 py-2 text-sm font-semibold text-white hover:opacity-80"
           >
             Get Started
@@ -34,8 +34,7 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 text-lg leading-relaxed text-gray-600">
-              Welcome to my website. This is a clean modern homepage built with Next.js and
-              deployed on Vercel. More features and pages coming soon.
+              More features and pages coming soon.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -47,10 +46,10 @@ export default function Home() {
               </a>
 
               <a
-                href="#"
+                href="/contact-us"
                 className="rounded-xl border border-gray-300 px-6 py-3 text-center text-sm font-semibold text-gray-900 hover:bg-gray-100"
               >
-                Contact Me
+                Contact Us
               </a>
             </div>
 
