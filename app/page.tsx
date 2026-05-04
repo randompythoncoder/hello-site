@@ -46,7 +46,7 @@ export default function Home() {
               </a>
 
               <a
-                href="/contact-us"
+                href="/contact"
                 className="rounded-xl border border-gray-300 px-6 py-3 text-center text-sm font-semibold text-gray-900 hover:bg-gray-100"
               >
                 Contact Us
@@ -111,9 +111,9 @@ export default function Home() {
           </p>
 
           <div className="flex gap-6 text-sm text-gray-500">
-            <a href="#" className="hover:text-black">GitHub</a>
-            <a href="#" className="hover:text-black">LinkedIn</a>
-            <a href="#" className="hover:text-black">Email</a>
+            <a href="https://github.com/randompythoncoder" target="_blank" className="hover:text-black">GitHub</a>
+            <a href="https://www.linkedin.com" target="_blank" className="hover:text-black">LinkedIn</a>
+            <a href="mailto:youremail@example.com" className="hover:text-black">Email</a>
           </div>
         </div>
       </footer>
