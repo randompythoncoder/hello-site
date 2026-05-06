@@ -1,118 +1,102 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
-      {/* Navbar */}
-      <header className="border-b border-gray-200">
+    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-cyan-50 text-slate-900">
+      <header className="sticky top-0 border-b border-slate-200/70 bg-white/70 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <div className="text-xl font-bold tracking-tight">ShaunSite</div>
-	
-	  <nav className="hidden gap-8 text-sm font-medium text-gray-600 md:flex">
-	     <a href="/" className="hover:text-black">Home</a>
-	     <a href="/about" className="hover:text-black">About</a>
-	     <a href="/products" className="hover:text-black">Products</a>
-	     <a href="/contact" className="hover:text-black">Contact</a>
-	  </nav>
+          <h1 className="text-2xl font-bold tracking-tight">FundraiserKit</h1>
+
+          <nav className="hidden gap-8 text-sm font-medium text-slate-600 md:flex">
+            <a href="/" className="transition hover:text-cyan-700">Home</a>
+            <a href="/products" className="transition hover:text-cyan-700">Products</a>
+            <a href="/about" className="transition hover:text-cyan-700">About</a>
+            <a href="/contact" className="transition hover:text-cyan-700">Contact</a>
+          </nav>
+
           <a
-            href="/get-started"
-            className="rounded-xl bg-black px-5 py-2 text-sm font-semibold text-white hover:opacity-80"
+            href="/products"
+            className="rounded-xl bg-slate-900 px-5 py-2 text-sm font-semibold text-white transition hover:scale-105 hover:bg-cyan-700"
           >
             Get Started
           </a>
         </div>
       </header>
 
-      {/* Hero */}
-      <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="grid items-center gap-12 md:grid-cols-2">
-          <div>
-            <p className="mb-4 inline-block rounded-full border border-gray-200 bg-gray-50 px-4 py-1 text-sm text-gray-600">
-              Modern • Clean • Fast
-            </p>
-
-            <h1 className="text-5xl font-bold leading-tight tracking-tight">
-              Build something people trust.
-            </h1>
-
-            <p className="mt-6 text-lg leading-relaxed text-gray-600">
-              More features and pages coming soon.
-            </p>
-
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <a
-                href="/products"
-                className="rounded-xl bg-black px-6 py-3 text-center text-sm font-semibold text-white hover:opacity-80"
-              >
-                View Products
-              </a>
-
-              <a
-                href="/contact"
-                className="rounded-xl border border-gray-300 px-6 py-3 text-center text-sm font-semibold text-gray-900 hover:bg-gray-100"
-              >
-                Contact Us
-              </a>
-            </div>
-
-            <div className="mt-10 flex gap-6 text-sm text-gray-500">
-              <div>
-                <p className="font-semibold text-black">Fast</p>
-                <p>Hosted on Vercel</p>
-              </div>
-              <div>
-                <p className="font-semibold text-black">Secure</p>
-                <p>Modern web stack</p>
-              </div>
-              <div>
-                <p className="font-semibold text-black">Scalable</p>
-                <p>Built for growth</p>
-              </div>
-            </div>
+      <section className="mx-auto grid max-w-6xl items-center gap-16 px-6 py-24 md:grid-cols-2">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="mb-5 inline-flex rounded-full border border-cyan-200 bg-cyan-50 px-4 py-1 text-sm text-cyan-700">
+            Modern Fundraising Solutions
           </div>
 
-          {/* Right Card */}
-          <div className="rounded-3xl border border-gray-200 bg-gradient-to-br from-gray-50 to-white p-10 shadow-sm">
-            <h2 className="text-xl font-semibold">Quick Overview</h2>
+          <h2 className="text-6xl font-bold leading-tight tracking-tight">
+            Fundraising made clean, simple, and professional.
+          </h2>
 
-            <p className="mt-3 text-gray-600">
-              This site is a starting point for bigger things — projects, dashboards, and tools.
-            </p>
-
-            <div className="mt-8 space-y-4">
-              <div className="rounded-2xl border border-gray-200 bg-white p-5">
-                <p className="text-sm font-semibold text-black">📌 Portfolio</p>
-                <p className="mt-1 text-sm text-gray-600">
-                  Showcase your skills, projects, and experience.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-gray-200 bg-white p-5">
-                <p className="text-sm font-semibold text-black">📊 Dashboard</p>
-                <p className="mt-1 text-sm text-gray-600">
-                  Build live analytics and trading tools later.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-gray-200 bg-white p-5">
-                <p className="text-sm font-semibold text-black">⚡ Fast Deploy</p>
-                <p className="mt-1 text-sm text-gray-600">
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="border-t border-gray-200">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-10 md:flex-row">
-          <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} ShaunSite. All rights reserved.
+          <p className="mt-6 text-lg leading-relaxed text-slate-600">
+            FundraiserKit helps schools, teams, and organizations run beautiful, organized fundraising campaigns with less stress and better results.
           </p>
 
-          <div className="flex gap-6 text-sm text-gray-500">
+          <div className="mt-10 flex gap-4">
+            <a
+              href="/products"
+              className="rounded-2xl bg-slate-900 px-7 py-4 font-semibold text-white transition hover:scale-105 hover:bg-cyan-700"
+            >
+              View Products
+            </a>
+
+            <a
+              href="/contact"
+              className="rounded-2xl border border-slate-300 bg-white px-7 py-4 font-semibold transition hover:scale-105 hover:bg-slate-100"
+            >
+              Contact Us
+            </a>
           </div>
-        </div>
-      </footer>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="rounded-[2rem] border border-slate-200 bg-white/80 p-10 shadow-2xl backdrop-blur"
+        >
+          <div className="space-y-5">
+            <div className="rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 p-6 text-white shadow-lg">
+              <h3 className="text-xl font-bold">Premium Fundraiser Kits</h3>
+              <p className="mt-2 text-sm text-cyan-50">
+                Designed for schools, clubs, sports teams, and communities.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 p-6 transition hover:-translate-y-1 hover:shadow-lg">
+              <h4 className="font-semibold">📦 Easy Setup</h4>
+              <p className="mt-2 text-sm text-slate-600">
+                Launch campaigns quickly with organized materials and guides.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 p-6 transition hover:-translate-y-1 hover:shadow-lg">
+              <h4 className="font-semibold">⚡ Fast & Modern</h4>
+              <p className="mt-2 text-sm text-slate-600">
+                Smooth experience built with modern technology and fast hosting.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 p-6 transition hover:-translate-y-1 hover:shadow-lg">
+              <h4 className="font-semibold">🤝 Trusted Feel</h4>
+              <p className="mt-2 text-sm text-slate-600">
+                Elegant design that feels reliable and professional.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </section>
     </main>
   );
 }
