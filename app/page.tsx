@@ -95,7 +95,6 @@ export default function Home() {
               <div className="rounded-2xl border border-gray-200 bg-white p-5">
                 <p className="text-sm font-semibold text-black">⚡ Fast Deploy</p>
                 <p className="mt-1 text-sm text-gray-600">
-                  Every push to GitHub updates your live site instantly.
                 </p>
               </div>
             </div>
@@ -111,9 +110,6 @@ export default function Home() {
           </p>
 
           <div className="flex gap-6 text-sm text-gray-500">
-            <a href="https://github.com/randompythoncoder" target="_blank" className="hover:text-black">GitHub</a>
-            <a href="https://www.linkedin.com" target="_blank" className="hover:text-black">LinkedIn</a>
-            <a href="mailto:youremail@example.com" className="hover:text-black">Email</a>
           </div>
         </div>
       </footer>
